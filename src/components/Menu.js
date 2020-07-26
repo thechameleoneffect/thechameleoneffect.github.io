@@ -47,8 +47,9 @@ const Menu = props => {
                       onMouseOver={event => handleSub(event.target.id)}
                       to={item.to}
                     >
+                      {/* <p> */}
                       {item.id}
-                      {item.subitems ? '+' : ''}
+                      {item.subitems ? <button id={item.id}>hi</button> : ''}
                     </Link>
                   </li>
                 )
