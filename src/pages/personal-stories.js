@@ -80,7 +80,7 @@ const Elements = props => {
                           />
                         </Link>
 
-                        {/* <p>this is a caption for the image</p> */}
+                        <p>this is a caption for the image</p>
                       </span>
                     </div>
                   )

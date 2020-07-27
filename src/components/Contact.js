@@ -33,14 +33,14 @@ const Contact = props => (
             <span className="icon alt fa-instagram"></span>
             <h3>Instagram</h3>
             <a href="https://instagram.com/the.chameleon.effect">
-              the.chameleon.effect
+              @the.chameleon.effect
             </a>
           </div>
         </section>
         <section>
           <div className="contact-method">
             <span className="icon alt fa-linkedin"></span>
-            <h3>Phone</h3>
+            <h3>LinkedIn</h3>
             <span>(000) 000-0000 x12387</span>
           </div>
         </section>
