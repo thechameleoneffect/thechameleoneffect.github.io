@@ -11,32 +11,40 @@ import pic10 from '../assets/images/pic10.jpg'
 const Elements = props => {
   const [stories, setStories] = useState([
     {
-      first: pic08,
+      first: pic03,
       alt: pic09,
       id: 0,
       to: '/personal-stories',
       flipped: false,
+      title: 'hi',
+      description: 'description',
     },
     {
-      first: pic09,
+      first: pic03,
       alt: pic08,
       id: 1,
       to: '/personal-stories',
       flipped: false,
+      title: 'hi2',
+      description: 'description',
     },
     {
-      first: pic08,
+      first: pic03,
       alt: pic09,
       id: 2,
       to: '/personal-stories',
       flipped: false,
+      title: 'idk',
+      description: 'description',
     },
     {
-      first: pic09,
+      first: pic03,
       alt: pic08,
       id: 3,
       to: '/personal-stories',
       flipped: false,
+      title: 'lol',
+      description: 'description',
     },
   ])
   useEffect(() => {}, [stories])
@@ -68,73 +76,25 @@ const Elements = props => {
                   return (
                     <div key={story.id} className="col-4">
                       <span className="image fit">
-                        <Link
-                          key={story.id}
-                          to={story.to}
-                          onMouseEnter={() => flip(story.id)}
-                          onMouseLeave={() => flip(story.id)}
-                        >
-                          <img
-                            src={story.flipped ? story.alt : story.first}
-                            alt=""
-                          />
+                        <Link key={story.id} to={story.to} className="PostCard">
+                          <div className="PostCard--Image">
+                            <img src={story.first}></img>
+                          </div>
+                          {/* <header>hi</header> */}
+                          <div
+                            className="PostCard--Content"
+                            // styles={{ padding: `10px !important` }}
+                            style={{ padding: '.5rem' }}
+                          >
+                            <h3 className="PostCard--Title">Title</h3>
+                            <div className="PostCard--Category">Subtitle</div>
+                            <div className="PostCard-Excerpt">Description</div>
+                          </div>
                         </Link>
-
-                        <p>this is a caption for the image</p>
                       </span>
                     </div>
                   )
                 })}
-                <div className="col-4">
-                  <span className="image fit">
-                    <Link to="/personal-stories">
-                      <img src={pic08} alt="" />
-                    </Link>
-
-                    {/* <p>this is a caption for the image</p> */}
-                  </span>
-                </div>
-                <div className="col-4">
-                  <span className="image fit">
-                    <img src={pic09} alt="" />
-                  </span>
-                </div>
-                <div className="col-4">
-                  <span className="image fit">
-                    <img src={pic10} alt="" />
-                  </span>
-                </div>
-                <div className="col-4">
-                  <span className="image fit">
-                    <img src={pic10} alt="" />
-                  </span>
-                </div>
-                <div className="col-4">
-                  <span className="image fit">
-                    <img src={pic08} alt="" />
-                  </span>
-                </div>
-                <div className="col-4">
-                  <span className="image fit">
-                    <img src={pic09} alt="" />
-                  </span>
-                </div>
-                <div className="col-4">
-                  <span className="image fit">
-                    <img src={pic09} alt="" />
-                  </span>
-                </div>
-                <div className="col-4">
-                  <span className="image fit">
-                    <img src={pic10} alt="" />
-                  </span>
-                </div>
-                <div className="col-4">
-                  <span className="image fit">
-                    <img src={pic08} alt="" />
-                    <p>hi</p>
-                  </span>
-                </div>
               </div>
             </div>
 
