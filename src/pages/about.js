@@ -21,35 +21,40 @@ const Generic = props => (
             <img src={pic11} alt="" />
           </span>
           <p>
-            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
-            primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
-            mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor
-            sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet,
-            fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit.
-            Donec urna ex, lacinia in purus ac, pretium pulvinar mauris.
-            Curabitur sapien risus, commodo eget turpis at, elementum convallis
-            elit. Pellentesque enim turpis, hendrerit.
+            The persistence of health disparities has driven U.S. medical
+            institutions to work towards the creation of culturally competent
+            curricula in an effort to systemically combat these disparities.
+            Despite this, research on all levels of medical education has
+            revealed that many universities are failing to meet the bare minimum
+            in disparity education, with most curricula lacking an
+            intersectional approach. This may be attributed to the traditional
+            method of medical curricula that focuses on singular populations and
+            neglects the intersection of multiple identities in a historical,
+            structural, and cultural context.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            Our team of three with backgrounds in bioethics, political science,
+            public health, social justice, and sociology have created this
+            project within the Intersectional Health Student Association (IHSA)
+            to shed light on health disparities across combinations of gender
+            identity, sexuality, race, age, socioeconomic status, and
+            disability, among other demographics. We invite you to use an
+            intersectional lens and conceptualize health inequities in health as
+            a social problem driven by a number of complex discriminations and
+            disadvantages.
           </p>
+          <h4>
+            <i>The Case for Intersectionality in Medical Curricula</i>
+          </h4>
           <p>
-            Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
-            Praesent rutrum sem diam, vitae egestas enim auctor sit amet.
-            Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien
-            risus, commodo eget turpis at, elementum convallis elit.
-            Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
+            Intersectionality shows us that sex, gender, sexuality, race,
+            culture, and socioeconomic status, among others, are NOT mutually
+            exclusive. Despite this, medical curricula focus on single
+            populations, which casts a shadow on those who sit at the center of
+            multiple intersecting minority identities. There needs to be a
+            cultural shift among medical professionals regarding how we think
+            about health disparities. Check out our educational materials on how
+            you can get started.
           </p>
         </div>
       </section>

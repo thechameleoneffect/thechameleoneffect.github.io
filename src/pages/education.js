@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-
+import { Link } from 'gatsby'
 import pic11 from '../assets/images/pic11.jpg'
 
 const Generic = props => (
@@ -20,36 +20,57 @@ const Generic = props => (
           <span className="image main">
             <img src={pic11} alt="" />
           </span>
+          <h4>
+            <i>
+              <Link to="education/foundations">Foundations</Link>
+            </i>
+          </h4>
           <p>
-            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
-            primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
-            mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor
-            sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet,
-            fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit.
-            Donec urna ex, lacinia in purus ac, pretium pulvinar mauris.
-            Curabitur sapien risus, commodo eget turpis at, elementum convallis
-            elit. Pellentesque enim turpis, hendrerit.
+            Adopting an intersectional lens in your studies and practice
+            requires significant commitment as it entails a complete
+            restructuring of your thought process. The first step is
+            understanding the basics. Take a look at our foundational posts and
+            recommended texts to learn what intersectionality is, and why it is
+            important.
           </p>
+          <h4>
+            <i>
+              <Link to="education/history">History</Link>
+            </i>
+          </h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            How can you avoid whitewashing medicine’s racist history? The field
+            of medicine unfortunately has a history of exploitation, racism, and
+            cruelty as a means for gaining knowledge. This history is not remote
+            but has persisted, and manifests today as health disparities. Use
+            our History section to educate yourself on medicine’s racist
+            history. Apply this knowledge to think critically about how current
+            policy may not be ethical or beneficial to everyone.
           </p>
+          <h4>
+            <i>
+              <Link to="education/emotional-intelligence">
+                Emotional Intelligence and Implicit Bias
+              </Link>
+            </i>
+          </h4>
           <p>
-            Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
-            Praesent rutrum sem diam, vitae egestas enim auctor sit amet.
-            Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien
-            risus, commodo eget turpis at, elementum convallis elit.
-            Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
+            How can you avoid whitewashing medicine’s racist history? The field
+            of medicine unfortunately has a history of exploitation, racism, and
+            cruelty as a means for gaining knowledge. This history is not remote
+            but has persisted, and manifests today as health disparities. Use
+            our History section to educate yourself on medicine’s racist
+            history. Apply this knowledge to think critically about how current
+            policy may not be ethical or beneficial to everyone.
+          </p>
+          <h4>
+            <i>
+              <Link to="education/resources">Resources</Link>
+            </i>
+          </h4>
+          <p>
+            Use our resources section for further readings and a diverse set of
+            topics related to disparities in health.
           </p>
         </div>
       </section>

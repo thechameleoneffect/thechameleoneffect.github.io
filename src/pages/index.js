@@ -1,17 +1,17 @@
 import React from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
 
-import pic01 from '../assets/images/pic01.jpg'
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-import pic04 from '../assets/images/pic04.jpg'
-import pic05 from '../assets/images/pic05.jpg'
-import pic06 from '../assets/images/pic06.jpg'
+// import pic01 from '../assets/images/pic01.jpg'
+// import pic02 from '../assets/images/pic02.jpg'
+// import pic03 from '../assets/images/pic03.jpg'
+// import pic04 from '../assets/images/pic04.jpg'
+// import pic05 from '../assets/images/pic05.jpg'
+// import pic06 from '../assets/images/pic06.jpg'
 import pic09 from '../assets/images/pic09.jpg'
-import pic10 from '../assets/images/pic10.jpg'
+// import pic10 from '../assets/images/pic10.jpg'
 
 class HomeIndex extends React.Component {
   render() {
@@ -32,13 +32,32 @@ class HomeIndex extends React.Component {
             <div className="inner">
               <h2 id="content">Project Summary</h2>
               <p>
-                Praesent ac adipiscing ullamcorper semper ut amet ac risus.
-                Lorem sapien ut odio odio nunc. Ac adipiscing nibh porttitor
-                erat risus justo adipiscing adipiscing amet placerat accumsan.
-                Vis. Faucibus odio magna tempus adipiscing a non. In mi primis
-                arcu ut non accumsan vivamus ac blandit adipiscing adipiscing
-                arcu metus praesent turpis eu ac lacinia nunc ac commodo gravida
-                adipiscing eget accumsan ac nunc adipiscing adipiscing.
+                Bargh and Chartrand define the chameleon effect as “nonconscious
+                mimicry of the postures, mannerisms, facial expressions, and
+                other behaviors of one's interaction partners, such that one's
+                behavior passively and unintentionally changes to match that of
+                others in one's current social environment.”
+              </p>
+              <p>
+                The Chameleon Effect is an initiative of the Intersectional
+                Health Student Association (IHSA) with the goal to restructure
+                how health professionals students conceptualize marginalized
+                populations and disparities in health. We are using The
+                Chameleon Effect as a metaphor for the persistent focus on
+                singular population curricula in medical education. New programs
+                are being developed at medical institutions across the country
+                in order to combat health disparities and produce more
+                culturally competent medical professionals. Unfortunately, there
+                is a reproduction of non-inclusive disparity curricula as
+                institutions mimic the currently established structure of
+                singular population curricula. This initiative was developed as
+                a platform for open dialogue and to spark conversation on the
+                presence (or lack) of intersectionality in medicine.{' '}
+                <strong>
+                  We aim to start our own Chameleon Effect that leads to the
+                  systemic adoption of an intersectional lens as the foundation
+                  for medical curricula.
+                </strong>
               </p>
             </div>
           </section>
@@ -49,24 +68,146 @@ class HomeIndex extends React.Component {
               </header>
               <div className="box alt">
                 <div className="grid-wrapper">
-                  <div className="col-4">
+                  <div key="Keely" className="col-4">
                     <span className="image fit">
-                      <img src={pic09} alt="" />
-                      <p>hi</p>
+                      <div className="PostCard--Image">
+                        <img src={pic09} alt=""></img>
+                      </div>
+                      <div
+                        className="PostCard--Content"
+                        style={{ padding: '.5rem' }}
+                      >
+                        <h3 className="PostCard--Title">Keely (she/her)</h3>
+                        <div className="PostCard-Excerpt">
+                          Keely graduated from Case Western Reserve University
+                          in 2019 and 2020 with her B.A./M.A. degrees in
+                          Political Science and Bioethics and Medical
+                          Humanities, respectively. Her two M.A. concentrations
+                          were in Research Ethics and Medicine, Society, and
+                          Culture. She is PhD candidate in Bioethics at CWRU,
+                          and hopes to research minority-focused ethics in
+                          epidemiology/public health policy and genetics.
+                        </div>
+                      </div>
                     </span>
                   </div>
-                  <div className="col-4">
+                  <div key="Medha" className="col-4">
                     <span className="image fit">
-                      <img src={pic10} alt="" />
+                      <div className="PostCard--Image">
+                        <img src={pic09} alt=""></img>
+                      </div>
+                      <div
+                        className="PostCard--Content"
+                        style={{ padding: '.5rem' }}
+                      >
+                        <h3 className="PostCard--Title">Medha (she/her)</h3>
+                        <div className="PostCard-Excerpt">
+                          Medha graduated from The University of Texas at Austin
+                          in May of 2020 with a Bachelor of Science in Public
+                          Health and a concentration in the Social and
+                          Behavioral Sciences. She is currently working in
+                          healthcare consulting before heading to medical
+                          school. Some of her advocacy interests include mental
+                          health and public policy for marginalized populations.
+                          With a passion for the fine arts, she also enjoys
+                          creative problem-solving and design-thinking.
+                        </div>
+                      </div>
                     </span>
                   </div>
-                  <div className="col-4">
+                  <div key="Noora" className="col-4">
                     <span className="image fit">
-                      <img src={pic10} alt="" />
+                      <div className="PostCard--Image">
+                        <img src={pic09} alt=""></img>
+                      </div>
+                      <div
+                        className="PostCard--Content"
+                        style={{ padding: '.5rem' }}
+                      >
+                        <h3 className="PostCard--Title">Noora (they/them)</h3>
+                        <div className="PostCard-Excerpt">
+                          Noora graduated with honors in Sociology from Case
+                          Western Reserve University in May of 2019. They will
+                          be starting their first year of medical school in
+                          August of 2020 at New York Institute of Technology
+                          College of Osteopathic Medicine (NYITCOM) at Arkansas
+                          State University. Their academic focuses include
+                          advocating for intersectional LGBTQI+ health education
+                          as well as inclusion of gender and sexual minorities
+                          in medicine.
+                        </div>
+                      </div>
                     </span>
                   </div>
                 </div>
               </div>
+              <p>
+                <span className="image left">
+                  <figure>
+                    <img src={pic09} alt="" />
+                    {/* <figcaption style={{ textAlign: 'center' }}>
+                      <strong>Keely (she/her)</strong>
+                    </figcaption> */}
+                  </figure>
+                </span>
+                <h3>Keely (she/her) </h3>
+                Keely graduated from Case Western Reserve University in 2019 and
+                2020 with her B.A./M.A. degrees in Political Science and
+                Bioethics and Medical Humanities, respectively. Her two M.A.
+                concentrations were in Research Ethics and Medicine, Society,
+                and Culture. She is PhD candidate in Bioethics at CWRU, and
+                hopes to research minority-focused ethics in epidemiology/public
+                health policy and genetics.
+              </p>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <p>
+                <span className="image right">
+                  <figure>
+                    <img src={pic09} alt="" />
+                    {/* <figcaption style={{ textAlign: 'center' }}>
+                      <strong>Medha (she/her)</strong>
+                    </figcaption> */}
+                  </figure>
+                </span>
+                <h3>Medha (she/her) </h3>
+                Medha graduated from The University of Texas at Austin in May of
+                2020 with a Bachelor of Science in Public Health and a
+                concentration in the Social and Behavioral Sciences. She is
+                currently working in healthcare consulting before heading to
+                medical school. Some of her advocacy interests include mental
+                health and public policy for marginalized populations. With a
+                passion for the fine arts, she also enjoys creative
+                problem-solving and design-thinking.
+              </p>
+              <br></br>
+              <br></br>
+              <br></br>
+              <p>
+                <span className="image left">
+                  <figure>
+                    <img src={pic09} alt="" />
+                    {/* <figcaption style={{ textAlign: 'center' }}>
+                      <strong>Noora (they/them)</strong>
+                    </figcaption> */}
+                  </figure>
+                </span>
+                <h3>Noora (they/them)</h3>
+                Noora graduated with honors in Sociology from Case Western
+                Reserve University in May of 2019. They will be starting their
+                first year of medical school in August of 2020 at New York
+                Institute of Technology College of Osteopathic Medicine
+                (NYITCOM) at Arkansas State University. Their academic focuses
+                include advocating for intersectional LGBTQI+ health education
+                as well as inclusion of gender and sexual minorities in
+                medicine.
+              </p>
+              <br></br>
+              <br></br>
+              <br></br>
             </div>
           </section>
           {/* <div id="main">
