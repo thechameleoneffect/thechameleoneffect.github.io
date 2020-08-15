@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import { Link } from 'gatsby'
 import pic11 from '../assets/images/pic11.jpg'
+import education from '../assets/images/personal stories trial.gif'
 
 const Generic = props => (
   <Layout>
@@ -18,7 +19,7 @@ const Generic = props => (
             <h1>Education</h1>
           </header>
           <span className="image main">
-            <img src={pic11} alt="" />
+            <img src={education} alt="" />
           </span>
           <h4>
             <i>

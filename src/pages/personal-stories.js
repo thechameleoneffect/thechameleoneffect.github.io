@@ -3,15 +3,19 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
-import pic03 from '../assets/images/pic03.jpg'
-import pic08 from '../assets/images/pic08.jpg'
-import pic09 from '../assets/images/pic09.jpg'
+import ps1 from '../assets/images/ps1.png'
+import ps2 from '../assets/images/ps2.png'
+import ps3 from '../assets/images/ps3.png'
+
+// import pic03 from '../assets/images/pic03.jpg'
+// import pic08 from '../assets/images/pic08.jpg'
+// import pic09 from '../assets/images/pic09.jpg'
 
 const Elements = props => {
   const [stories, setStories] = useState([
     {
-      first: pic03,
-      alt: pic09,
+      first: ps1,
+      // alt: pic09,
       id: 0,
       to: '/personal-stories',
       flipped: false,
@@ -19,8 +23,8 @@ const Elements = props => {
       description: 'description',
     },
     {
-      first: pic03,
-      alt: pic08,
+      first: ps2,
+      // alt: pic08,
       id: 1,
       to: '/personal-stories',
       flipped: false,
@@ -28,21 +32,12 @@ const Elements = props => {
       description: 'description',
     },
     {
-      first: pic03,
-      alt: pic09,
+      first: ps3,
+      // alt: pic09,
       id: 2,
       to: '/personal-stories',
       flipped: false,
       title: 'idk',
-      description: 'description',
-    },
-    {
-      first: pic03,
-      alt: pic08,
-      id: 3,
-      to: '/personal-stories',
-      flipped: false,
-      title: 'lol',
       description: 'description',
     },
   ])
@@ -96,6 +91,18 @@ const Elements = props => {
                   )
                 })}
               </div>
+            </div>
+            <div text-align="center">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdo3E7rNAlZWaZIDYj4Yfs1PyPQLawMs7tRoqUckHrmBslzmw/viewform?embedded=true"
+                width="1200"
+                height="500"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+              >
+                Loading…
+              </iframe>
             </div>
           </div>
         </section>

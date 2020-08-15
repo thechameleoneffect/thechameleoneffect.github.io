@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
+import about from '../assets/images/about header.png'
 
 import pic11 from '../assets/images/pic11.jpg'
 
@@ -18,7 +19,7 @@ const Generic = props => (
             <h1>About</h1>
           </header>
           <span className="image main">
-            <img src={pic11} alt="" />
+            <img src={about} alt="" />
           </span>
           <p>
             The persistence of health disparities has driven U.S. medical
