@@ -11,6 +11,9 @@ import Banner from '../components/Banner'
 // import pic05 from '../assets/images/pic05.jpg'
 // import pic06 from '../assets/images/pic06.jpg'
 import pic09 from '../assets/images/pic09.jpg'
+import medha from '../assets/images/medha.png'
+import keely from '../assets/images/keely.png'
+import noora from '../assets/images/noora.png'
 // import pic10 from '../assets/images/pic10.jpg'
 
 class HomeIndex extends React.Component {
@@ -66,85 +69,10 @@ class HomeIndex extends React.Component {
               <header className="major">
                 <h2>Meet the Team</h2>
               </header>
-              <div className="box alt">
-                <div className="grid-wrapper">
-                  <div key="Keely" className="col-4">
-                    <span className="image fit">
-                      <div className="PostCard--Image">
-                        <img src={pic09} alt=""></img>
-                      </div>
-                      <div
-                        className="PostCard--Content"
-                        style={{ padding: '.5rem' }}
-                      >
-                        <h3 className="PostCard--Title">Keely (she/her)</h3>
-                        <div className="PostCard-Excerpt">
-                          Keely graduated from Case Western Reserve University
-                          in 2019 and 2020 with her B.A./M.A. degrees in
-                          Political Science and Bioethics and Medical
-                          Humanities, respectively. Her two M.A. concentrations
-                          were in Research Ethics and Medicine, Society, and
-                          Culture. She is PhD candidate in Bioethics at CWRU,
-                          and hopes to research minority-focused ethics in
-                          epidemiology/public health policy and genetics.
-                        </div>
-                      </div>
-                    </span>
-                  </div>
-                  <div key="Medha" className="col-4">
-                    <span className="image fit">
-                      <div className="PostCard--Image">
-                        <img src={pic09} alt=""></img>
-                      </div>
-                      <div
-                        className="PostCard--Content"
-                        style={{ padding: '.5rem' }}
-                      >
-                        <h3 className="PostCard--Title">Medha (she/her)</h3>
-                        <div className="PostCard-Excerpt">
-                          Medha graduated from The University of Texas at Austin
-                          in May of 2020 with a Bachelor of Science in Public
-                          Health and a concentration in the Social and
-                          Behavioral Sciences. She is currently working in
-                          healthcare consulting before heading to medical
-                          school. Some of her advocacy interests include mental
-                          health and public policy for marginalized populations.
-                          With a passion for the fine arts, she also enjoys
-                          creative problem-solving and design-thinking.
-                        </div>
-                      </div>
-                    </span>
-                  </div>
-                  <div key="Noora" className="col-4">
-                    <span className="image fit">
-                      <div className="PostCard--Image">
-                        <img src={pic09} alt=""></img>
-                      </div>
-                      <div
-                        className="PostCard--Content"
-                        style={{ padding: '.5rem' }}
-                      >
-                        <h3 className="PostCard--Title">Noora (they/them)</h3>
-                        <div className="PostCard-Excerpt">
-                          Noora graduated with honors in Sociology from Case
-                          Western Reserve University in May of 2019. They will
-                          be starting their first year of medical school in
-                          August of 2020 at New York Institute of Technology
-                          College of Osteopathic Medicine (NYITCOM) at Arkansas
-                          State University. Their academic focuses include
-                          advocating for intersectional LGBTQI+ health education
-                          as well as inclusion of gender and sexual minorities
-                          in medicine.
-                        </div>
-                      </div>
-                    </span>
-                  </div>
-                </div>
-              </div>
               <p>
                 <span className="image left">
                   <figure>
-                    <img src={pic09} alt="" />
+                    <img src={keely} alt="" />
                     {/* <figcaption style={{ textAlign: 'center' }}>
                       <strong>Keely (she/her)</strong>
                     </figcaption> */}
@@ -167,7 +95,7 @@ class HomeIndex extends React.Component {
               <p>
                 <span className="image right">
                   <figure>
-                    <img src={pic09} alt="" />
+                    <img src={medha} alt="" />
                     {/* <figcaption style={{ textAlign: 'center' }}>
                       <strong>Medha (she/her)</strong>
                     </figcaption> */}
@@ -189,7 +117,7 @@ class HomeIndex extends React.Component {
               <p>
                 <span className="image left">
                   <figure>
-                    <img src={pic09} alt="" />
+                    <img src={noora} alt="" />
                     {/* <figcaption style={{ textAlign: 'center' }}>
                       <strong>Noora (they/them)</strong>
                     </figcaption> */}
