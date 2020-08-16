@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Contact = props => (
+  // <section id={props.page ? `contact-${props.page}` : 'contact'}>
   <section id="contact">
     <div className="inner">
       <section>

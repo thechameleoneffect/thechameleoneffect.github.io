@@ -2,25 +2,28 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import about from '../assets/images/about header.png'
+import Banner from '../components/Banner'
 
-import pic11 from '../assets/images/pic11.jpg'
+// import pic11 from '../assets/images/pic11.jpg'
 
 const Generic = props => (
-  <Layout>
+  <Layout page="about">
     <Helmet>
       <title>Generic - Forty by HTML5 UP</title>
       <meta name="description" content="Generic Page" />
     </Helmet>
 
+    <Banner page="about" title="About" subtitle="" />
+
     <div id="main" className="alt">
       <section id="one">
         <div className="inner">
-          <header className="major">
+          {/* <header className="major">
             <h1>About</h1>
           </header>
           <span className="image main">
             <img src={about} alt="" />
-          </span>
+          </span> */}
           <p>
             The persistence of health disparities has driven U.S. medical
             institutions to work towards the creation of culturally competent

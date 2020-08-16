@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
@@ -10,16 +10,17 @@ import Banner from '../components/Banner'
 // import pic04 from '../assets/images/pic04.jpg'
 // import pic05 from '../assets/images/pic05.jpg'
 // import pic06 from '../assets/images/pic06.jpg'
-import pic09 from '../assets/images/pic09.jpg'
+// import pic09 from '../assets/images/pic09.jpg'
 import medha from '../assets/images/medha.png'
 import keely from '../assets/images/keely.png'
 import noora from '../assets/images/noora.png'
+// import pic08 from '../assets/images/pic08.jpg'
 // import pic10 from '../assets/images/pic10.jpg'
 
 class HomeIndex extends React.Component {
   render() {
     return (
-      <Layout>
+      <Layout page="about">
         <Helmet
           title="The Chameleon Effect"
           meta={[
@@ -28,7 +29,11 @@ class HomeIndex extends React.Component {
           ]}
         ></Helmet>
 
-        <Banner />
+        <Banner
+          page="home"
+          title="The Chameleon Effect"
+          subtitle="A platform for open dialogues about intersectionality in healthcare"
+        />
         <div id="main" className="alt">
           <section id="one">
             {/* <div id="main"> */}
@@ -64,76 +69,92 @@ class HomeIndex extends React.Component {
               </p>
             </div>
           </section>
-          <section id="two">
-            <div className="inner">
-              <header className="major">
-                <h2>Meet the Team</h2>
-              </header>
-              <p>
-                <span className="image left" style={{ boxShadow: 'none' }}>
-                  <figure>
-                    <img src={keely} alt="" />
-                    {/* <figcaption style={{ textAlign: 'center' }}>
-                      <strong>Keely (she/her)</strong>
-                    </figcaption> */}
-                  </figure>
-                </span>
-                <h3>Keely (she/her) </h3>
-                Keely graduated from Case Western Reserve University in 2019 and
-                2020 with her B.A./M.A. degrees in Political Science and
-                Bioethics and Medical Humanities, respectively. Her two M.A.
-                concentrations were in Research Ethics and Medicine, Society,
-                and Culture. She is PhD candidate in Bioethics at CWRU, and
-                hopes to research minority-focused ethics in epidemiology/public
-                health policy and genetics.
-              </p>
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-              <p>
-                <span className="image right" style={{ boxShadow: 'none' }}>
-                  <figure>
-                    <img src={medha} alt="" />
-                    {/* <figcaption style={{ textAlign: 'center' }}>
-                      <strong>Medha (she/her)</strong>
-                    </figcaption> */}
-                  </figure>
-                </span>
-                <h3>Medha (she/her) </h3>
-                Medha graduated from The University of Texas at Austin in May of
-                2020 with a Bachelor of Science in Public Health and a
-                concentration in the Social and Behavioral Sciences. She is
-                currently working in healthcare consulting before heading to
-                medical school. Some of her advocacy interests include mental
-                health and public policy for marginalized populations. With a
-                passion for the fine arts, she also enjoys creative
-                problem-solving and design-thinking.
-              </p>
-              <br></br>
-              <br></br>
-              <br></br>
-              <p>
-                <span className="image left" style={{ boxShadow: 'none' }}>
-                  <figure>
-                    <img src={noora} alt="" />
-                  </figure>
-                </span>
-                <h3>Noora (they/them)</h3>
-                Noora graduated with honors in Sociology from Case Western
-                Reserve University in May of 2019. They will be starting their
-                first year of medical school in August of 2020 at New York
-                Institute of Technology College of Osteopathic Medicine
-                (NYITCOM) at Arkansas State University. Their academic focuses
-                include advocating for intersectional LGBTQI+ health education
-                as well as inclusion of gender and sexual minorities in
-                medicine.
-              </p>
-              <br></br>
-              <br></br>
-              <br></br>
-            </div>
+          <div className="inner">
+            <header className="major">
+              <h2>Meet the Team</h2>
+            </header>
+          </div>
+          <section id="two" className="spotlights">
+            <section id="keely">
+              <img src={keely} alt="" />
+              <div className="content">
+                <div className="inner">
+                  <header className="major">
+                    <h3>Keely (she/her)</h3>
+                  </header>
+                  <p>
+                    Keely graduated from Case Western Reserve University in 2019
+                    and 2020 with her B.A./M.A. degrees in Political Science and
+                    Bioethics and Medical Humanities, respectively. Her two M.A.
+                    concentrations were in Research Ethics and Medicine,
+                    Society, and Culture. She is PhD candidate in Bioethics at
+                    CWRU, and hopes to research minority-focused ethics in
+                    epidemiology/public health policy and genetics.
+                  </p>
+                  {/* <ul className="actions">
+                    <li>
+                      <Link to="/generic" className="button">
+                        Learn more
+                      </Link>
+                    </li>
+                  </ul> */}
+                </div>
+              </div>
+            </section>
+            <section>
+              <img src={medha} alt="" />
+              <div className="content">
+                <div className="inner">
+                  <header className="major">
+                    <h3>Medha (she/her)</h3>
+                  </header>
+                  <p>
+                    Medha graduated from The University of Texas at Austin in
+                    May of 2020 with a Bachelor of Science in Public Health and
+                    a concentration in the Social and Behavioral Sciences. She
+                    is currently working in healthcare consulting before heading
+                    to medical school. Some of her advocacy interests include
+                    mental health and public policy for marginalized
+                    populations. With a passion for the fine arts, she also
+                    enjoys creative problem-solving and design-thinking.
+                  </p>
+                  {/* <ul className="actions">
+                    <li>
+                      <Link to="/generic" className="button">
+                        Learn more
+                      </Link>
+                    </li>
+                  </ul> */}
+                </div>
+              </div>
+            </section>
+            <section>
+              <img src={noora} alt="" />
+              <div className="content">
+                <div className="inner">
+                  <header className="major">
+                    <h3>Noora (they/them)</h3>
+                  </header>
+                  <p>
+                    Noora graduated with honors in Sociology from Case Western
+                    Reserve University in May of 2019. They will be starting
+                    their first year of medical school in August of 2020 at New
+                    York Institute of Technology College of Osteopathic Medicine
+                    (NYITCOM) at Arkansas State University. Their academic
+                    focuses include advocating for intersectional LGBTQI+ health
+                    education as well as inclusion of gender and sexual
+                    minorities in medicine.
+                  </p>
+                  {/* <ul className="actions">
+                    <li>
+                      <Link to="/generic" className="button">
+                        Learn more
+                      </Link>
+                    </li>
+                  </ul> */}
+                </div>
+              </div>
+            </section>
           </section>
         </div>
       </Layout>
