@@ -17,6 +17,27 @@ import noora from '../assets/images/noora.png'
 // import pic08 from '../assets/images/pic08.jpg'
 // import pic10 from '../assets/images/pic10.jpg'
 
+const members = [
+  {
+    name: 'Keely (she/her)',
+    picture: keely,
+    text:
+      'Keely graduated from Case Western Reserve University in 2019 and 2020 with her B.A./M.A. degrees in Political Science and Bioethics and Medical Humanities, respectively. Her two M.A. concentrations were in Research Ethics and Medicine, Society, and Culture. She is PhD candidate in Bioethics at CWRU, and hopes to research minority-focused ethics in epidemiology/public health policy and genetics.',
+  },
+  {
+    name: 'Medha (she/her)',
+    picture: medha,
+    text:
+      'Medha graduated from The University of Texas at Austin in May of 2020 with a Bachelor of Science in Public Health and a concentration in the Social and Behavioral Sciences. She is currently working in healthcare consulting before heading to medical school. Some of her advocacy interests include mental health and public policy for marginalized populations. With a passion for the fine arts, she also enjoys creative problem-solving and design-thinking.',
+  },
+  {
+    name: 'Noora (they/them)',
+    picture: noora,
+    text:
+      'Noora graduated with honors in Sociology from Case Western Reserve University in May of 2019. They will be starting their first year of medical school in August of 2020 at New York Institute of Technology College of Osteopathic Medicine (NYITCOM) at Arkansas State University. Their academic focuses include advocating for intersectional LGBTQI+ health education as well as inclusion of gender and sexual minorities in medicine.',
+  },
+]
+
 class HomeIndex extends React.Component {
   render() {
     return (
@@ -74,104 +95,126 @@ class HomeIndex extends React.Component {
               <h2>Meet the Team</h2>
             </header>
           </div>
-          <section id="two" className="spotlights">
-            <section id="keely">
-              <img
-                src={keely}
-                alt=""
-                className="image"
-                style={{ boxShadow: 'none' }}
-              />
+          <div className="inner">
+            <div className="box alt">
+              <div className="grid-wrapper">
+                {members.map(member => {
+                  return (
+                    <div key={member.name} className="col-4">
+                      <span className="image fit member">
+                        {/* <div> */}
+                        <img src={member.picture} alt=""></img>
+                        {/* </div> */}
+                        <div className="overlay">
+                          <div className="text">{member.text}</div>
+                        </div>
+                      </span>
+                      <h3 style={{ textAlign: 'center' }}>{member.name}</h3>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+            <section id="two" className="spotlights">
+              <section id="keely">
+                <img
+                  src={keely}
+                  alt=""
+                  className="image"
+                  style={{ boxShadow: 'none' }}
+                />
 
-              <div className="content">
-                <div className="inner">
-                  <header className="major">
-                    <h3>Keely (she/her)</h3>
-                  </header>
-                  <p>
-                    Keely graduated from Case Western Reserve University in 2019
-                    and 2020 with her B.A./M.A. degrees in Political Science and
-                    Bioethics and Medical Humanities, respectively. Her two M.A.
-                    concentrations were in Research Ethics and Medicine,
-                    Society, and Culture. She is PhD candidate in Bioethics at
-                    CWRU, and hopes to research minority-focused ethics in
-                    epidemiology/public health policy and genetics.
-                  </p>
-                  {/* <ul className="actions">
+                <div className="content">
+                  <div className="inner">
+                    <header className="major">
+                      <h3>Keely (she/her)</h3>
+                    </header>
+                    <p>
+                      Keely graduated from Case Western Reserve University in
+                      2019 and 2020 with her B.A./M.A. degrees in Political
+                      Science and Bioethics and Medical Humanities,
+                      respectively. Her two M.A. concentrations were in Research
+                      Ethics and Medicine, Society, and Culture. She is PhD
+                      candidate in Bioethics at CWRU, and hopes to research
+                      minority-focused ethics in epidemiology/public health
+                      policy and genetics.
+                    </p>
+                    {/* <ul className="actions">
                     <li>
                       <Link to="/generic" className="button">
                         Learn more
                       </Link>
                     </li>
                   </ul> */}
+                  </div>
                 </div>
-              </div>
-            </section>
-            <section>
-              <img
-                src={medha}
-                alt=""
-                className="image"
-                style={{ boxShadow: 'none' }}
-              />
-              <div className="content">
-                <div className="inner">
-                  <header className="major">
-                    <h3>Medha (she/her)</h3>
-                  </header>
-                  <p>
-                    Medha graduated from The University of Texas at Austin in
-                    May of 2020 with a Bachelor of Science in Public Health and
-                    a concentration in the Social and Behavioral Sciences. She
-                    is currently working in healthcare consulting before heading
-                    to medical school. Some of her advocacy interests include
-                    mental health and public policy for marginalized
-                    populations. With a passion for the fine arts, she also
-                    enjoys creative problem-solving and design-thinking.
-                  </p>
-                  {/* <ul className="actions">
+              </section>
+              <section>
+                <img
+                  src={medha}
+                  alt=""
+                  className="image"
+                  style={{ boxShadow: 'none' }}
+                />
+                <div className="content">
+                  <div className="inner">
+                    <header className="major">
+                      <h3>Medha (she/her)</h3>
+                    </header>
+                    <p>
+                      Medha graduated from The University of Texas at Austin in
+                      May of 2020 with a Bachelor of Science in Public Health
+                      and a concentration in the Social and Behavioral Sciences.
+                      She is currently working in healthcare consulting before
+                      heading to medical school. Some of her advocacy interests
+                      include mental health and public policy for marginalized
+                      populations. With a passion for the fine arts, she also
+                      enjoys creative problem-solving and design-thinking.
+                    </p>
+                    {/* <ul className="actions">
                     <li>
                       <Link to="/generic" className="button">
                         Learn more
                       </Link>
                     </li>
                   </ul> */}
+                  </div>
                 </div>
-              </div>
-            </section>
-            <section>
-              <img
-                src={noora}
-                alt=""
-                className="image"
-                style={{ boxShadow: 'none' }}
-              />
-              <div className="content">
-                <div className="inner">
-                  <header className="major">
-                    <h3>Noora (they/them)</h3>
-                  </header>
-                  <p>
-                    Noora graduated with honors in Sociology from Case Western
-                    Reserve University in May of 2019. They will be starting
-                    their first year of medical school in August of 2020 at New
-                    York Institute of Technology College of Osteopathic Medicine
-                    (NYITCOM) at Arkansas State University. Their academic
-                    focuses include advocating for intersectional LGBTQI+ health
-                    education as well as inclusion of gender and sexual
-                    minorities in medicine.
-                  </p>
-                  {/* <ul className="actions">
+              </section>
+              <section>
+                <img
+                  src={noora}
+                  alt=""
+                  className="image"
+                  style={{ boxShadow: 'none' }}
+                />
+                <div className="content">
+                  <div className="inner">
+                    <header className="major">
+                      <h3>Noora (they/them)</h3>
+                    </header>
+                    <p>
+                      Noora graduated with honors in Sociology from Case Western
+                      Reserve University in May of 2019. They will be starting
+                      their first year of medical school in August of 2020 at
+                      New York Institute of Technology College of Osteopathic
+                      Medicine (NYITCOM) at Arkansas State University. Their
+                      academic focuses include advocating for intersectional
+                      LGBTQI+ health education as well as inclusion of gender
+                      and sexual minorities in medicine.
+                    </p>
+                    {/* <ul className="actions">
                     <li>
                       <Link to="/generic" className="button">
                         Learn more
                       </Link>
                     </li>
                   </ul> */}
+                  </div>
                 </div>
-              </div>
+              </section>
             </section>
-          </section>
+          </div>
         </div>
       </Layout>
     )
