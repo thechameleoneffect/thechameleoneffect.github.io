@@ -76,7 +76,13 @@ class HomeIndex extends React.Component {
           </div>
           <section id="two" className="spotlights">
             <section id="keely">
-              <img src={keely} alt="" />
+              <img
+                src={keely}
+                alt=""
+                className="image"
+                style={{ boxShadow: 'none' }}
+              />
+
               <div className="content">
                 <div className="inner">
                   <header className="major">
@@ -102,7 +108,12 @@ class HomeIndex extends React.Component {
               </div>
             </section>
             <section>
-              <img src={medha} alt="" />
+              <img
+                src={medha}
+                alt=""
+                className="image"
+                style={{ boxShadow: 'none' }}
+              />
               <div className="content">
                 <div className="inner">
                   <header className="major">
@@ -129,7 +140,12 @@ class HomeIndex extends React.Component {
               </div>
             </section>
             <section>
-              <img src={noora} alt="" />
+              <img
+                src={noora}
+                alt=""
+                className="image"
+                style={{ boxShadow: 'none' }}
+              />
               <div className="content">
                 <div className="inner">
                   <header className="major">
