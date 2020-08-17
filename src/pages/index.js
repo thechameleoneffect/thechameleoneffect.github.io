@@ -14,6 +14,7 @@ import Banner from '../components/Banner'
 import medha from '../assets/images/medha.png'
 import keely from '../assets/images/keely.png'
 import noora from '../assets/images/noora.png'
+import snigdha from '../assets/images/snigdha.png'
 // import pic08 from '../assets/images/pic08.jpg'
 // import pic10 from '../assets/images/pic10.jpg'
 
@@ -35,6 +36,12 @@ const members = [
     picture: noora,
     text:
       'Noora graduated with honors in Sociology from Case Western Reserve University in May of 2019. They will be starting their first year of medical school in August of 2020 at New York Institute of Technology College of Osteopathic Medicine (NYITCOM) at Arkansas State University. Their academic focuses include advocating for intersectional LGBTQI+ health education as well as inclusion of gender and sexual minorities in medicine.',
+  },
+  {
+    name: 'Snigdha (she/her)',
+    picture: snigdha,
+    text:
+      'Snigdha graduated from The Univeristy of Texas at Austin in May of 2019 with a Bachelor of Science in Electrical and Computer Engineering. She is currently working as a Software Engineer while pursuing a Master of Science in Computer Science from Georgia Institute of Technology part time. Her interests include web and mobile development, and she hopes to use her technical skills to uplift underrepresented groups both inside and outside the tech industry.',
   },
 ]
 
@@ -115,7 +122,7 @@ class HomeIndex extends React.Component {
                 })}
               </div>
             </div>
-            <section id="two" className="spotlights">
+            {/* <section id="two" className="spotlights">
               <section id="keely">
                 <img
                   src={keely}
@@ -139,13 +146,6 @@ class HomeIndex extends React.Component {
                       minority-focused ethics in epidemiology/public health
                       policy and genetics.
                     </p>
-                    {/* <ul className="actions">
-                    <li>
-                      <Link to="/generic" className="button">
-                        Learn more
-                      </Link>
-                    </li>
-                  </ul> */}
                   </div>
                 </div>
               </section>
@@ -171,13 +171,6 @@ class HomeIndex extends React.Component {
                       populations. With a passion for the fine arts, she also
                       enjoys creative problem-solving and design-thinking.
                     </p>
-                    {/* <ul className="actions">
-                    <li>
-                      <Link to="/generic" className="button">
-                        Learn more
-                      </Link>
-                    </li>
-                  </ul> */}
                   </div>
                 </div>
               </section>
@@ -203,17 +196,10 @@ class HomeIndex extends React.Component {
                       LGBTQI+ health education as well as inclusion of gender
                       and sexual minorities in medicine.
                     </p>
-                    {/* <ul className="actions">
-                    <li>
-                      <Link to="/generic" className="button">
-                        Learn more
-                      </Link>
-                    </li>
-                  </ul> */}
                   </div>
                 </div>
               </section>
-            </section>
+            </section> */}
           </div>
         </div>
       </Layout>
